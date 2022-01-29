@@ -42,7 +42,7 @@ const LazyImage = ({src}) => {
   }, [isVisible]);
 
 	return (
-     <img src={isVisible ? src : loading} className="w-full h-full object-center object-cover p-4" ref={rootRef} srcset={isVisible ? src + '&w=1000 1000w, ' + src + '&w=1200 1200w, ' + src + '&w=1400 1400w': ''} sizes="(min-width: 768px) 40vw, 90vw" />
+     <img alt="house image" src={isVisible ? src : loading} className="w-full h-full object-center object-cover p-4" ref={rootRef} srcset={isVisible ? src + '&w=1000 1000w, ' + src + '&w=1200 1200w, ' + src + '&w=1400 1400w': ''} sizes="(min-width: 768px) 40vw, 90vw" />
 	);
 };
 
